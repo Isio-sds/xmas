@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="サツフェスジャンケンゲーム" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/stylechrismas.css" />
+    <link rel="icon" type="image/png" href="image/janken_choki.png" />
+    <title>みんそろじゃんけんゲーム</title>
+  </head>
+  <body>
+    <!-- 音素材読み込み -->
+    <audio id="pon_au" preload="auto">
+      <source src="sound/jyanken/pon.m4a" type="audio/wav" />
+    </audio>
+
+    <audio id="start_au" preload="auto">
+      <source src="sound/jyanken/じゃんけん...wav" type="audio/wav" />
+    </audio>
+
+    <audio id="aiko_au" preload="auto">
+      <source src="sound/jyanken/あいこでしょ.wav" type="audio/wav" />
+    </audio>
+
+    <audio id="gu_au" preload="auto">
+      <source src="sound/jyanken/グー.wav" type="audio/wav" />
+    </audio>
+
+    <audio id="choki_au" preload="auto">
+      <source src="sound/jyanken/チョキ.wav" type="audio/wav" />
+    </audio>
+
+    <audio id="pa_au" preload="auto">
+      <source src="sound/jyanken/パー.wav" type="audio/wav" />
+    </audio>
+
+    <audio id="win_au" preload="auto">
+      <source src="sound/jyanken/あなたの勝ち.wav" type="audio/wav" />
+    </audio>
+
+    <audio id="lose_au" preload="auto">
+      <source src="sound/jyanken/あなたの負け.wav" type="audio/wav" />
+    </audio>
+
+    <!-- 雪が降る背景 -->
+    <div class="snow">●</div>
+    <div class="snow snow2nd">●</div>
+
+    <div class="wrap">
+      <!-- title area -->
+      
+      <div id="image" class="text-center">
+        <img src="image/chiristmas/introsanta.jpg" alt="" />
+        <!-- <p id="santa_hand"></p> -->
+     
+      </div>
+
+      <!-- comment area -->
+      <div id="comment">
+        <h1>じゃんけんしようぜ!!</h1>
+        <!-- <h2></h2> -->
+      </div>
+
+      <div id="battle_field">
+        <!-- machine area -->
+        <div id="machine">
+          <!-- <img src="image/janken_gu.png" alt="じゃんけんのグー"> -->
+        </div>
+        <!-- my area -->
+        <div id="buttons">
+          <!-- <button class="gu">
+            <img src="image/janken_gu.png" alt="じゃんけんのグー" />
+          </button>
+          <button class="choki">
+            <img src="image/janken_choki.png" alt="じゃんけんのグー" />
+          </button>
+          <button class="pa">
+            <img src="image/janken_pa.png" alt="じゃんけんのグー" />
+          </button> -->
+          <button id="pon">
+            <img src="image/chiristmas/watermark.jpg" alt="">
+          </button>
+        </div>
+      </div>
+
+      <!-- control area -->
+      <div class="text-center">
+        <button id="control">じゃんけん</button>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="js/jankenchrismas.js"></script>
+    </div>
+  </body>
+</html>
